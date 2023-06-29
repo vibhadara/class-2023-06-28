@@ -49,4 +49,4 @@ po/*~
 rsconnect/
 
 *Rproj
-im_files/
+*files

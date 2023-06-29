@@ -3,3 +3,26 @@ title: "Immigration"
 format: html
 editor: visual
 ---
+
+## Question
+
+What is the average causal effect of hearing Spanish on attitudes toward immigration among students in this class? 
+
+
+Units - students in this class    
+Treatments - hearing spanish/not hearing spanish
+Outcomes - attitudes
+
+Preceptor Table
+
+```{r}
+library(tidyverse)
+library(primer.data)
+```
+
+Average Causal Effect: The difference between
+```{r}
+trains |>
+  summarise(mean_att_end = mean(att_end), .by = treatment)
+```
+
